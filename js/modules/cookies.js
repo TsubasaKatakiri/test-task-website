@@ -3,12 +3,16 @@ const cookies = (messageSelector, buttonSelector) => {
     const button = document.querySelector(buttonSelector);
 
     const isCookiesOk = localStorage.getItem('cookiesOK');
-    if(!isCookiesOk) message.classList.add('cookies--active');
+    if(!isCookiesOk) {
+        message.classList.remove('cookies--disabled');
+        message.classList.add('cookies--active');
+    }
 
     if(message){
         button.addEventListener('click', function(){
             localStorage.setItem('cookiesOK', true);
             message.classList.remove('cookies--active');
+            message.classList.add('cookies--disabled');
         })
     }
 }
