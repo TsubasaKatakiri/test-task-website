@@ -3,7 +3,6 @@
 .cookies{
     width: 100%;
     display: flex;
-    visibility: hidden;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -18,8 +17,8 @@
     font-size: 0.8rem;
 }
 
-.cookies--active{
-    visibility: visible;
+.cookies--inactive{
+    display: none;
 }
 
 .cookies__controls{
