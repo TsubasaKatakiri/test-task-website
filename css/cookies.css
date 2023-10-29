@@ -35,6 +35,10 @@
     padding: 0.5rem 1rem;
 }
 
+.cookies__info{
+    display: block;
+}
+
 @media screen and (min-width: 960px){
     .cookies{
         padding: 1.5rem 3rem;

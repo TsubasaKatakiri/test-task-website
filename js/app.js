@@ -5,7 +5,6 @@ import form from './modules/form.js';
 import cookies from './modules/cookies.js';
 
 window.addEventListener('DOMContentLoaded', () => {
-    console.log('load complete');
     animations();
     form('#contact_form', '#privacy');
     cookies('#cookies', '#cookies_consent');
