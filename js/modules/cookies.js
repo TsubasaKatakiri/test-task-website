@@ -13,7 +13,6 @@ const cookies = (messageSelector, buttonSelector) => {
         button.addEventListener('click', function(){
             localStorage.setItem('cookiesOK', true);
             message.classList.remove('cookies--active');
-            message.classList.add('cookies--disabled');
         })
     }
 }
