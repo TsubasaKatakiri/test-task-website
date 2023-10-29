@@ -39,7 +39,7 @@
 }
 
 .cookies__info{
-    display: block;
+    display: block !important;
 }
 
 @media screen and (min-width: 960px){
