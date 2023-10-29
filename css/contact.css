@@ -1,0 +1,133 @@
+@import url('vars.css');
+
+.contact{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: stretch;
+    justify-content: space-between;
+    background: linear-gradient(var(--MASK-COLOR-STRONG), var(--MASK-COLOR-STRONG)), url('../images/hero6.jfif');
+}
+
+.contact__form, .contact__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contact__form{
+    background-color: var(--CARD-BGCOLOR);
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 0;
+}
+
+.contact__input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact__input label{
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact__input input{
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: 0;
+    border-radius: 10px;
+    outline: 0;
+    margin-bottom: 0.5rem;
+}
+
+.contact__input textarea{
+    width: 100%;
+    height: 150px;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: 0;
+    border-radius: 10px;
+    outline: 0;
+    margin-bottom: 0.5rem;
+    resize: none;
+}
+
+.contact__checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.checkbox{
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.75rem;
+}
+
+.contact__header{
+    font-weight: 700;
+    font-size: 2rem;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.contact__info{
+    background-color: var(--CARD-BGCOLOR);;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+
+.contact__group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--BGCOLOR);;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.contact__subheader{
+    font-size: 1.25rem;
+}
+
+.contact__map{
+    width: 100%;
+    height: 400px;
+}
+
+
+@media screen and (min-width: 960px){
+    .contact{
+        flex-direction: row;
+    }
+
+    .contact__form, .contact__info{
+        width: calc(50% - 10px);
+    }
+
+    .contact__form{
+        margin-right: 10px;
+    }
+
+    .contact__info{
+        margin-bottom: 0;
+        margin-left: 10px;
+    }
+
+    .contact__map{
+        width: 100%;
+        height: 100%;
+    }
+}

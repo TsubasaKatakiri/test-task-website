@@ -1,0 +1,89 @@
+@import url('vars.css');
+
+.services, .actions{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.services{
+    background: linear-gradient(var(--MASK-COLOR-STRONG), var(--MASK-COLOR-STRONG)), url('../images/hero3.png');
+}
+
+.actions{
+    background: linear-gradient(var(--MASK-COLOR-STRONG), var(--MASK-COLOR-STRONG)), url('../images/hero4.jpg');
+}
+
+.service{
+    width: 100%;
+    background-color: var(--CARD-BGCOLOR);
+    color:var(--FONT-COLOR);
+    border: 2px solid var(--CARD-BGCOLOR);
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    flex: 1 0 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.service:hover{
+    background-color: var(--ACCENT-COLOR);
+    border: 2px solid var(--ACCENT-COLOR);
+}
+
+.service__figure{
+    height: calc(100% - 32px);
+    width: 100%;
+}
+
+.service__figure img{
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.service__figcaption{
+    height: 32px;
+    width: 100%;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.5rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 425px){
+    .services .service{
+        width: calc((100% / 2) - 20px);
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 560px){
+    .actions .service{
+        width: calc((100% / 3) - 20px);
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .services .service{
+        width: calc((100% / 3) - 20px);
+    }
+
+    .service__figure{
+        height: calc(100% - 42px);
+    }
+
+    .service__figcaption{
+        height: 42px;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 0.5rem 1rem;
+    }
+}

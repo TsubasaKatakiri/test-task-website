@@ -1,0 +1,92 @@
+@import url('vars.css');
+@import url('fonts.css');
+@import url('header.css');
+@import url('hero.css');
+@import url('section.css');
+@import url('about.css');
+@import url('services_actions.css');
+@import url('testimonials.css');
+@import url('contact.css');
+@import url('privacy.css');
+@import url('info.css');
+@import url('footer.css');
+@import url('cookies.css');
+
+/* || RESET */
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input, button, textarea{
+    font: inherit;
+}
+
+/* || GENERAL STYLES */
+html{
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(1rem, 1.5vh, 1.5rem);
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--BGCOLOR);
+}
+
+a:any-link{
+    text-decoration: none;
+}
+
+a:any-link:not(.button){
+    color: var(--FONT-COLOR);
+}
+
+a:any-link:not(.link--special){
+    font-weight: 600;
+    color: var(--LINK-COLOR);
+}
+
+a:hover:not(.link--special),
+a:focus-visible:not(.link--special){
+    color:var(--LINK-COLOR-HOVER)
+}
+
+/* || GENERAL COMPONENTS */
+.button{
+    display: inline-block;
+    border: 2px solid var(--ACCENT-COLOR);
+    border-radius: 5px;
+    background-color: var(--ACCENT-COLOR);
+    color: var(--FONT-COLOR);
+    padding: 1rem 2rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: color 0.1s linear, background-color 0.1s linear;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: var(--BUTTON-BGCOLOR-WHITE);
+    color: var(--ACCENT-COLOR);
+}
+
+.button--hollow{
+    background-color: transparent;
+    color: var(--ACCENT-COLOR);
+}
+
+.button--hollow:hover{
+    background-color: var(--ACCENT-COLOR);
+    color: var(--FONT-COLOR);
+}

@@ -1,0 +1,29 @@
+:root{
+    /* FONTS */
+    --FF: "Poppins", sans-serif;
+    --FS: clamp(0.8rem, 3vw, 1.75rem);
+
+    /* MARGINS AND PADDINGS */
+    --BLOCK-PADDING: 1.5rem 3rem;
+
+    /* TRANSITIONS */
+    --TRANSITION: all 0.25s linear;
+
+    /* COLORS */
+    --BGCOLOR: #181818;
+    --FONT-COLOR: #F0F0F0;
+    --MASK-COLOR: rgba(17, 17, 17, 0.8);
+    --MASK-COLOR-STRONG: rgba(17, 17, 17, 0.9);
+    --HEADER-BGCOLOR: #111;
+    --HEADER-FONT-COLOR: #F0F0F0;
+    --SECTION-HEADER-COLOR: #666;
+    --CARD-BGCOLOR: #333;
+    --FOOTER-BGCOLOR: #111;
+    --FOOTER-FONT-COLOR: #F0F0F0;
+    --COOKIES-BGCOLOR: #111;
+    --COOKIES-FONT-COLOR: #F0F0F0;
+    --ACCENT-COLOR: #E61919;
+    --LINK-COLOR: #E61919;
+    --LINK-COLOR-HOVER: #FF4343;
+    --BUTTON-BGCOLOR-WHITE: #F0F0F0;
+}
