@@ -2,7 +2,7 @@
 
 .cookies{
     width: 100%;
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -17,8 +17,8 @@
     font-size: 0.8rem;
 }
 
-.cookies--inactive{
-    display: none;
+.cookies--active{
+    display: flex;
 }
 
 .cookies__controls{
@@ -33,10 +33,6 @@
 .cookies__controls > *{
     width: 120px;
     padding: 0.5rem 1rem;
-}
-
-.cookies__info{
-    display: flex !important;
 }
 
 @media screen and (min-width: 960px){
